@@ -1,0 +1,6 @@
+<apex:page controller="CustomLabelTranslationController">
+Visualforceタグ：<apex:outputLabel value="{!$Label.custom_label_sample}" />
+<br />
+Apexから利用：{!text}
+</apex:page>
+
