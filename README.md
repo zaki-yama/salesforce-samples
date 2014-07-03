@@ -1,1 +1,1 @@
-Force.comのサンプル
+Force.comのサンプルコードです

@@ -1,0 +1,8 @@
+<apex:page standardController="MyObj__c" recordSetVar="myObjs" extensions="MultiRecordProcessController" action="{!execute}">
+<apex:pageBlock>
+<apex:pageBlockTable value="{!selected}" var="myObj">
+    <apex:outputText value="{!myObj.name}" />
+    <apex:outputText value="{!myObj.text__c}" /><br/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:page>
