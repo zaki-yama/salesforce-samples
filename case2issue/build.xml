@@ -32,7 +32,7 @@
 
 	<!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged -->
 	<target name="deployUnpackaged">
-		<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="dir"/>
+		<sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src"/>
 	</target>
 
 	<!-- Deploy a zip of metadata files to the org -->
