@@ -1,6 +1,6 @@
 public class SendEmail {
 
-	private static final String SUBJECT = 'Sampel Email';
+	private static final String SUBJECT = 'Sample Email';
 
 	private static final String BODY = 'Hi, This is a sample email.';
 
