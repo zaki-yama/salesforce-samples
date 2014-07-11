@@ -4,6 +4,9 @@ public class CalloutClass {
 	private static String PASSWORD  = '*****Your GitHub password here*****';
 	private static String REPO_NAME = '*****Your GitHub repository name here*****';
 
+	// モッククラス
+	public static HttpCalloutMock mock = null;
+
 	public static HttpResponse executeCallout(Map<String, String> request) {
 
 		HttpRequest req = new HttpRequest();
@@ -24,6 +27,13 @@ public class CalloutClass {
 		req.setBody(JSON.serialize(request));
 
 		Http http = new Http();
-		http.send(req);
+		HttpResponse res;
+		if (Test.isRunningTest() && (mock != null)) {
+			// テスト時はこちらが実行される
+			res = mock.respond(req);
+		} else {
+			res = http.send(req);
+		}
+		return res;
 	}
 }

@@ -15,7 +15,8 @@ public class CalloutBatchTest {
 			'body'  => c.description
 		};
 		Test.startTest();
-		Test.setMock(HttpCalloutMock.class, new CalloutMockImpl());
+		// Test.setMockのかわりにこれを使う
+		CalloutClass.mock = new CalloutMockImpl();
 		Database.executeBatch(new CalloutBatch(), 1);
 		Test.stopTest();
 
