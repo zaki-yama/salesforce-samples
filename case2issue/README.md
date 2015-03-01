@@ -1,3 +1,5 @@
-### このディレクトリについて
-ApexのHttpコールアウトを利用したサンプルです。
-ケース登録時、GitHubのIssueに登録します。
+Case to GitHub Issue Sample
+===========================
+
+ApexのHttpコールアウトを利用したサンプルです。  
+Salesforce でケースを登録すると、GitHubのIssueに登録します。
