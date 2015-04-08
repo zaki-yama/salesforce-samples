@@ -1,0 +1,3 @@
+[submodule "force-com-migration-tool-scaffold"]
+	path = force-com-migration-tool-scaffold
+	url = git@github.com:zaki-yama/force-com-migration-tool-scaffold.git
