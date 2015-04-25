@@ -1,0 +1,5 @@
+<aura:component>
+	<aura:attribute name="myText" type="String" default="None" />
+	<c:cmpEventSender messageEvent="{!c.answer}" />
+	<p> This is Receiver's message: {!v.myText} </p>
+</aura:component>

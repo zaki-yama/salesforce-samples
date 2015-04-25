@@ -1,0 +1,6 @@
+<!-- アプリケーションイベント　送信側コンポーネント -->
+<aura:component>
+	<aura:registerEvent name="messageEvent" type="c:appEventMessage" />
+	<ui:button label="1" press="{!c.send}" />
+	<ui:button label="2" press="{!c.send}" />
+</aura:component>

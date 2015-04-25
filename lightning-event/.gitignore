@@ -1,0 +1,4 @@
+.DS_Store
+*.properties
+retrievecodepkg/*
+!retrievecodepkg/package.xml
