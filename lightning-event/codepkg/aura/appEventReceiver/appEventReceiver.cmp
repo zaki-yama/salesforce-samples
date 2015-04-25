@@ -1,0 +1,6 @@
+<!-- アプリケーションイベント　受信側コンポーネント -->
+<aura:component>
+	<aura:attribute name="myText" type="String" default="None" />
+	<aura:handler event="c:appEventMessage" action="{!c.answer}" />
+	Message: {!v.myText}
+</aura:component>

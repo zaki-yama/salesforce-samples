@@ -1,0 +1,4 @@
+<!-- コンポーネントイベント イベント -->
+<aura:event type="COMPONENT">
+	<aura:attribute name="text" type="String" />
+</aura:event>
