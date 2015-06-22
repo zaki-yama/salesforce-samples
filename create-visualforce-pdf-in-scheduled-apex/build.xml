@@ -1,0 +1,88 @@
+<project name="Salesforce Ant tasks" default="deployCode" basedir="." xmlns:sf="antlib:com.salesforce">
+
+    <!-- デフォルトで使用する
+        - .properties ファイル
+        - deploy 対象ディレクトリ
+        - retrieve 先ディレクトリ -->
+    <property name="property" value="build.properties"/>
+    <property name="deployTarget" value="codepkg"/>
+    <property name="retrieveTarget" value="retrievecodepkg"/>
+
+    <property file="${property}"/>
+    <property environment="env"/>
+
+    <!-- コードを組織から取得 -->
+    <target name="retrieveCode">
+        <sf:retrieve
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            maxPoll="${sf.maxPoll}"
+            retrieveTarget="${retrieveTarget}"
+            unpackaged="${retrieveTarget}/package.xml"/>
+    </target>
+
+    <!-- コードを組織にデプロイ -->
+    <target name="deployCode">
+        <sf:deploy
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            maxPoll="${sf.maxPoll}"
+            deployRoot="${deployTarget}">
+        </sf:deploy>
+    </target>
+
+    <!-- コードを組織から削除 -->
+    <!-- deployRoot に指定したディレクトリ内に
+        package.xml と destructiveChanges.xml を置く -->
+    <target name="removeCode">
+        <sf:deploy
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            maxPoll="${sf.maxPoll}"
+            deployRoot="removecodepkg"/>
+    </target>
+
+    <!-- コードをデプロイし、テストを実行する -->
+    <target name="deployCodeAndRunTests">
+        <sf:deploy
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            maxPoll="${sf.maxPoll}"
+            deployRoot="codepkg"
+            runAllTests="true"
+            logType="Debugonly"/>
+    </target>
+
+    <!-- コードがデプロイ可能かどうか、チェックのみ行う -->
+    <target name="deployCodeCheckOnly">
+        <sf:deploy
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            maxPoll="${sf.maxPoll}"
+            deployRoot="codepkg"
+            checkOnly="true"/>
+    </target>
+
+    <!-- メタデータの一覧を表示する
+        ref. http://qiita.com/zaki-yama/items/4b66b86900b604794f3d  -->
+    <target name="describeMetadata">
+        <sf:describeMetadata
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"/>
+    </target>
+    <!-- 特定の sf.metadataType のメタデータ情報を取得する
+        (sf.metadataType は build.properties に記述する) -->
+    <target name="listMetadata">
+        <sf:listMetadata
+            username="${sf.username}"
+            password="${sf.password}"
+            serverurl="${sf.serverurl}"
+            metadataType="${sf.metadataType}"/>
+    </target>
+</project>

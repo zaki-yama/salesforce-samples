@@ -1,0 +1,18 @@
+<apex:page renderAs="pdf" standardController="Opportunity" showHeader="false" sidebar="false" action="{!init}" applyBodyTag="false" applyHtmlTag="false">
+<html>
+	<head>
+		<style>
+		@page {
+			size: 8.27in 11.69in;
+			margin: 10px;
+		}
+		body {
+			font-family: 'Arial Unicode MS';
+		}
+		</style>
+	</head>
+	<body>
+		<!-- ここに表示内容 -->
+	</body>
+</html>
+</apex:page>
