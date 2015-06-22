@@ -8,6 +8,11 @@
     <property name="deployTarget" value="codepkg"/>
     <property name="retrieveTarget" value="retrievecodepkg"/>
 
+	<available file="${property}" property="property.exists" />
+	<fail unless="${property.exists}" message="Property file does not exist: ${property}" />
+
+	<echo message="Property: ${property}, deployTarget: ${deployTarget}, retrieveTarget: ${retrieveTarget}" />
+
     <property file="${property}"/>
     <property environment="env"/>
 
