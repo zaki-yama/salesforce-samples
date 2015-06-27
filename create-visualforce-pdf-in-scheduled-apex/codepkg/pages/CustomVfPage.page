@@ -12,7 +12,7 @@
 		.opportunityName {
 			width: 100%;
 			text-align: center;
-			border-bottom: 1px;
+			margin-bottom: 10px;
 			font: 20pt;
 		}
 		.opportunityItems th {
