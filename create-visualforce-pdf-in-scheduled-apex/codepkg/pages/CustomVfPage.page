@@ -1,4 +1,4 @@
-<apex:page renderAs="pdf" standardController="Opportunity" showHeader="false" sidebar="false" action="{!init}" applyBodyTag="false" applyHtmlTag="false">
+<apex:page renderAs="pdf" standardController="Opportunity" showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false">
 <html>
 	<head>
 		<style>
@@ -9,10 +9,41 @@
 		body {
 			font-family: 'Arial Unicode MS';
 		}
+		.opportunityName {
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px;
+			font: 20pt;
+		}
+		.opportunityItems th {
+			text-align: center;
+			background-color: #cccccc;
+		}
+		.opportunityItems .unitPrice, .quantity {
+			text-align: right;
+		}
 		</style>
 	</head>
 	<body>
-		<!-- ここに表示内容 -->
+		<div class="opportunityName">
+			{!opportunity.name}
+		</div>
+		<div class="opportunityItems">
+			<table width="100%" border="1" cellspacing="0" cellpadding="0">
+				<tr>
+					<th width="40%"> 商品名 </th>
+					<th width="30%"> 単価 </th>
+					<th width="30%"> 数量 </th>
+				</tr>
+				<apex:repeat value="{!opportunity.opportunityLineItems}" var="lineItem" >
+				<tr>
+					<td> {!lineItem.product2.name} </td>
+					<td class="unitPrice"> {!lineItem.unitPrice} </td>
+					<td class="quantity"> {!lineItem.quantity} </td>
+				</tr>
+				</apex:repeat>
+			</table>
+		</div>
 	</body>
 </html>
 </apex:page>
