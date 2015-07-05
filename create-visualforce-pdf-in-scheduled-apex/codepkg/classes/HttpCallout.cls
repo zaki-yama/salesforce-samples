@@ -1,15 +1,16 @@
 public class HttpCallout {
 
 	@future(callout=true)
-	public static void sendVF() {
+	public static void sendVF(String sessionId) {
+		// 名前空間を設定している場合は apexrest/ の後に必要
 		String serviceUrl = '/services/apexrest/sendPDFEmail';
 		String endpoint = URL.getSalesforceBaseUrl().toExternalForm() + serviceUrl;
 		System.debug(LoggingLevel.INFO, endpoint);
 		HttpRequest req = new HttpRequest();
 		req.setEndpoint(endpoint);
 		req.setMethod('POST');
-		System.debug(LoggingLevel.INFO, UserInfo.getSessionId());
-		req.setHeader('Authorization', 'OAuth ' + UserInfo.getSessionId());
+		System.debug(LoggingLevel.INFO, sessionId);
+		req.setHeader('Authorization', 'OAuth ' + sessionId);
 		req.setHeader('Content-Type','application/json');
 
 		// パラメータを渡したい場合こうする
