@@ -6,7 +6,15 @@
     </types>
     <types>
         <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>ApexPage</name>
+    </types>
+    <types>
+        <members>unfiled$public/CustomVfTemplate</members>
+        <name>EmailTemplate</name>
     </types>
     <version>33.0</version>
 </Package>
