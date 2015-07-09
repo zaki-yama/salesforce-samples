@@ -1,0 +1,9 @@
+<messaging:emailTemplate subject="test" recipientType="Contact" relatedToType="Opportunity">
+	<messaging:plainTextEmailBody >
+		おめでとうございます!
+		これが新しい Visualforce メールテンプレートです。
+	</messaging:plainTextEmailBody>
+    <messaging:attachment renderAs="PDF" filename="添付書類.pdf">
+		<c:CustomVfComponent oppId="{!relatedTo.Id}" />
+	</messaging:attachment>
+</messaging:emailTemplate>
