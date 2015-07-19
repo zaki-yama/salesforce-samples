@@ -1,0 +1,6 @@
+<apex:page controller="GoogleController">
+    Provider ID: {!provider.Id}<br />
+    Provider Name: {!provider.DeveloperName}<br />
+    Google Access Token: {!accessToken}<br />
+    <a href="https://login.salesforce.com/services/auth/oauth/{!$Organization.Id}/{!provider.DeveloperName}?startURL=/apex/Google">Start OAuth</a>
+</apex:page>
