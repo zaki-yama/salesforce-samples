@@ -6,6 +6,7 @@
     </types>
     <types>
         <members>Threat_Tier__mdt</members>
+        <members>VAT_Data__mdt</members>
         <name>CustomObject</name>
     </types>
     <version>41.0</version>
