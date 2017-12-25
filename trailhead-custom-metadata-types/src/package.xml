@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Account.Support_Level__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Accessories_to_SFA_Field_Mappings__mdt</members>
+        <members>Agency_Service_Providers__mdt</members>
+        <members>Booking__c</members>
+        <members>Threat_Tier_Mappings__mdt</members>
+        <members>Threat_Tier__mdt</members>
+        <members>VAT_Data__mdt</members>
+        <members>Vacation_Package__c</members>
+        <name>CustomObject</name>
+    </types>
+    <version>41.0</version>
+</Package>
