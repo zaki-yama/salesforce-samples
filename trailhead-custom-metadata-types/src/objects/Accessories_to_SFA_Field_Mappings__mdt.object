@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Accessories_Field__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Accessories_Field</label>
+        <metadataRelationshipControllingField>Accessories_to_SFA_Field_Mappings__mdt.Accessories_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>Accessories_to_SFA_Field_Mappings1</relationshipLabel>
+        <relationshipName>Accessories_to_SFA_Field_Mappings1</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Accessories_Object__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Accessories_Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>Accessories_to_SFA_Field_Mappings1</relationshipLabel>
+        <relationshipName>Accessories_to_SFA_Field_Mappings1</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFA_Field__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SFA_Field</label>
+        <metadataRelationshipControllingField>Accessories_to_SFA_Field_Mappings__mdt.SFA_Object__c</metadataRelationshipControllingField>
+        <referenceTo>FieldDefinition</referenceTo>
+        <relationshipLabel>Accessories_to_SFA_Field_Mappings</relationshipLabel>
+        <relationshipName>Accessories_to_SFA_Field_Mappings</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFA_Object__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>SFA Object</label>
+        <referenceTo>EntityDefinition</referenceTo>
+        <relationshipLabel>Accessories_to_SFA_Field_Mappings</relationshipLabel>
+        <relationshipName>Accessories_to_SFA_Field_Mappings</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>Accessories to SFA Field Mappings</label>
+    <visibility>Public</visibility>
+</CustomObject>
