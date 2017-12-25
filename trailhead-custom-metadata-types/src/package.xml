@@ -10,6 +10,7 @@
     </types>
     <types>
         <members>Accessories_to_SFA_Field_Mappings__mdt</members>
+        <members>Agency_Service_Providers__mdt</members>
         <members>Booking__c</members>
         <members>Threat_Tier_Mappings__mdt</members>
         <members>Threat_Tier__mdt</members>
