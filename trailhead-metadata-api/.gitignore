@@ -1,4 +1,4 @@
 .sfdx
 .env
 .vscode
-src
+build.properties
