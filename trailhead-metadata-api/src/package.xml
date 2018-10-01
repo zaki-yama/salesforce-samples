@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>DeploymentTest</members>
+        <members>DeployMetadata</members>
+        <members>MetadataExample</members>
+        <members>MyDeploymentCallbackTest</members>
+        <members>PostInstallCallback</members>
+        <members>PostInstallScript</members>
+        <members>UpdateContactPageLayout</members>
+        <members>UpdatePageLayout</members>
+        <members>VATController</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>VATRateForm</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>VAT_Rate__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <version>43.0</version>
+</Package>
