@@ -6,7 +6,12 @@
         <members>PostInstallScript</members>
         <members>UpdateContactPageLayout</members>
         <members>UpdatePageLayout</members>
+        <members>VATController</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>VATRateForm</members>
+        <name>ApexPage</name>
     </types>
     <types>
         <members>*</members>
