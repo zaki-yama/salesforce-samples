@@ -8,5 +8,9 @@
         <members>UpdatePageLayout</members>
         <name>ApexClass</name>
     </types>
+    <types>
+        <members>VAT_Rate__mdt</members>
+        <name>CustomObject</name>
+    </types>
     <version>43.0</version>
 </Package>
