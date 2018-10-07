@@ -1,0 +1,29 @@
+<apex:page sidebar="false" docType="html-5.0" controller="ContactListController">
+<html>
+  <head>
+    <apex:slds />
+  </head>
+  <body>
+    <div class="slds-p-vertical--medium" id="contactList">
+      <div class="slds-scrollable--x">
+        <table class="slds-table slds-table--bordered">
+          <thead>
+             <tr>
+               <th scope="col">Name</th>
+               <th scope="col">Email</th>
+             </tr>
+          </thead>
+          <tbody>
+             <apex:repeat value="{!contacts}" var="contact">
+               <tr>
+                 <td>{!contact.Name}</td>
+                 <td>{!contact.Email}</td>
+               </tr>
+             </apex:repeat>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+</apex:page>
