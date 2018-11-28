@@ -36,8 +36,8 @@
 #import <SalesforceSDKCore/SFLoginViewController.h>
 
 // Fill these in when creating a new Connected Application on Force.com
-static NSString * const RemoteAccessConsumerKey = @"3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYHOU4SqQRSEitYFDUpqRWcoQ2.dBv_a1Dyu5xa";
-static NSString * const OAuthRedirectURI        = @"testsfdc:///mobilesdk/detect/oauth/done";
+static NSString * const RemoteAccessConsumerKey = @"3MVG9I1kFE5Iul2BYKzI252s0YGo.Vtx_4BJr43DqWN6Yl5VeQWVDoXRPDbwCT7zX4uklZhw6XcMQ3qR9Yk_M";
+static NSString * const OAuthRedirectURI        = @"mysampleapp://auth/success";
 
 @implementation AppDelegate
 
