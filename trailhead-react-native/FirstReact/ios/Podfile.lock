@@ -1,0 +1,191 @@
+PODS:
+  - boost-for-react-native (1.63.0)
+  - CocoaLumberjack (2.4.0):
+    - CocoaLumberjack/Default (= 2.4.0)
+    - CocoaLumberjack/Extensions (= 2.4.0)
+  - CocoaLumberjack/Core (2.4.0)
+  - CocoaLumberjack/Default (2.4.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.4.0):
+    - CocoaLumberjack/Default
+  - DoubleConversion (1.1.5)
+  - FMDB/SQLCipher (2.7.5):
+    - SQLCipher
+  - Folly (2016.09.26.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.4)
+  - React (0.55.4):
+    - React/Core (= 0.55.4)
+  - React/ART (0.55.4):
+    - React/Core
+  - React/Core (0.55.4):
+    - yoga (= 0.55.4.React)
+  - React/CxxBridge (0.55.4):
+    - Folly (= 2016.09.26.00)
+    - React/Core
+    - React/cxxreact
+  - React/cxxreact (0.55.4):
+    - boost-for-react-native (= 1.63.0)
+    - Folly (= 2016.09.26.00)
+    - React/jschelpers
+    - React/jsinspector
+  - React/DevSupport (0.55.4):
+    - React/Core
+    - React/RCTWebSocket
+  - React/fishhook (0.55.4)
+  - React/jschelpers (0.55.4):
+    - Folly (= 2016.09.26.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.55.4)
+  - React/PrivateDatabase (0.55.4)
+  - React/RCTActionSheet (0.55.4):
+    - React/Core
+  - React/RCTAnimation (0.55.4):
+    - React/Core
+  - React/RCTBlob (0.55.4):
+    - React/Core
+  - React/RCTCameraRoll (0.55.4):
+    - React/Core
+    - React/RCTImage
+  - React/RCTGeolocation (0.55.4):
+    - React/Core
+  - React/RCTImage (0.55.4):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.55.4):
+    - React/Core
+  - React/RCTNetwork (0.55.4):
+    - React/Core
+  - React/RCTPushNotification (0.55.4):
+    - React/Core
+  - React/RCTSettings (0.55.4):
+    - React/Core
+  - React/RCTText (0.55.4):
+    - React/Core
+  - React/RCTVibration (0.55.4):
+    - React/Core
+  - React/RCTWebSocket (0.55.4):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - React/tvOS (0.55.4):
+    - React/Core
+  - SalesforceAnalytics (6.2.0):
+    - SalesforceAnalytics/SalesforceAnalytics (= 6.2.0)
+  - SalesforceAnalytics/SalesforceAnalytics (6.2.0):
+    - CocoaLumberjack (~> 2.4.0)
+  - SalesforceReact (6.2.0):
+    - SalesforceReact/SalesforceReact (= 6.2.0)
+  - SalesforceReact/SalesforceReact (6.2.0):
+    - React
+    - SalesforceSDKCore
+    - SmartStore
+    - SmartSync
+  - SalesforceSDKCore (6.2.0):
+    - SalesforceSDKCore/SalesforceSDKCore (= 6.2.0)
+  - SalesforceSDKCore/SalesforceSDKCore (6.2.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/arc (= 6.2.0)
+    - SalesforceSDKCore/SalesforceSDKCore/base (= 6.2.0)
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc (= 6.2.0)
+  - SalesforceSDKCore/SalesforceSDKCore/arc (6.2.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+    - SalesforceSDKCore/SalesforceSDKCore/no-arc
+  - SalesforceSDKCore/SalesforceSDKCore/base (6.2.0):
+    - SalesforceAnalytics
+  - SalesforceSDKCore/SalesforceSDKCore/no-arc (6.2.0):
+    - SalesforceAnalytics
+    - SalesforceSDKCore/SalesforceSDKCore/base
+  - SmartStore (6.2.0):
+    - SmartStore/SmartStore (= 6.2.0)
+  - SmartStore/SmartStore (6.2.0):
+    - FMDB/SQLCipher (~> 2.7.2)
+    - SalesforceSDKCore
+    - SQLCipher/fts (~> 3.4.1)
+  - SmartSync (6.2.0):
+    - SmartSync/SmartSync (= 6.2.0)
+  - SmartSync/SmartSync (6.2.0):
+    - SalesforceSDKCore
+    - SmartStore
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/fts (3.4.2):
+    - SQLCipher/common
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
+  - yoga (0.55.4.React)
+
+DEPENDENCIES:
+  - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
+  - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - React/ART (from `../node_modules/react-native`)
+  - React/CxxBridge (from `../node_modules/react-native`)
+  - React/cxxreact (from `../node_modules/react-native`)
+  - React/DevSupport (from `../node_modules/react-native`)
+  - React/jschelpers (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTCameraRoll (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTPushNotification (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - React/tvOS (from `../node_modules/react-native`)
+  - SalesforceAnalytics (from `../mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceReact (from `../mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SalesforceSDKCore (from `../mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SmartStore (from `../mobile_sdk/SalesforceMobileSDK-iOS`)
+  - SmartSync (from `../mobile_sdk/SalesforceMobileSDK-iOS`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: ../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
+  Folly:
+    :podspec: ../node_modules/react-native/third-party-podspecs/Folly.podspec
+  glog:
+    :podspec: ../node_modules/react-native/third-party-podspecs/glog.podspec
+  React:
+    :path: ../node_modules/react-native
+  SalesforceAnalytics:
+    :path: ../mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceReact:
+    :path: ../mobile_sdk/SalesforceMobileSDK-iOS
+  SalesforceSDKCore:
+    :path: ../mobile_sdk/SalesforceMobileSDK-iOS
+  SmartStore:
+    :path: ../mobile_sdk/SalesforceMobileSDK-iOS
+  SmartSync:
+    :path: ../mobile_sdk/SalesforceMobileSDK-iOS
+  yoga:
+    :path: ../node_modules/react-native/ReactCommon/yoga
+
+SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
+  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
+  React: aa2040dbb6f317b95314968021bd2888816e03d5
+  SalesforceAnalytics: ce80f5a13795d12812dbb83a7048370d3ccb6bf5
+  SalesforceReact: a1ffa48d11d6497c4db71eb61bb0d0962636f6b7
+  SalesforceSDKCore: fd9c9ae15609796308d22e8e2fdeb3cb43b06ccf
+  SmartStore: 7d6c420b7aa6050ed0aed65e9a163ad12b1550f4
+  SmartSync: 1604bbb47e111d6f08dd5272dc52d65afaf94abe
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
+  yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
+
+PODFILE CHECKSUM: c2e3090208768e918e8242c368c13fa18d72de35
+
+COCOAPODS: 1.4.0

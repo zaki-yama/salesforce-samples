@@ -1,0 +1,9 @@
+{
+  "name": "trailhead-react-native",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "forcereact": "^6.2.0"
+  }
+}
