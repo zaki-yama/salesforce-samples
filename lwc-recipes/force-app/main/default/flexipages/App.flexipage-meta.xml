@@ -5,6 +5,9 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <componentInstances>
+            <componentName>helloConditionalRendering</componentName>
+        </componentInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
