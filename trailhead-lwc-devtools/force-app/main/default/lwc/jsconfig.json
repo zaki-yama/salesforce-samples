@@ -2,7 +2,11 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "c/my-first-web-component": [
+                "myFirstWebComponent/myFirstWebComponent.js"
+            ]
+        }
     },
     "include": [
         "**/*",
