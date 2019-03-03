@@ -1,4 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track } from 'lwc';
 
 export default class App extends LightningElement {
    name = 'Electra X4';
@@ -7,4 +7,13 @@ export default class App extends LightningElement {
    material = 'Steel';
    price = '$2,700';
    pictureUrl = 'https://s3-us-west-1.amazonaws.com/sfdc-demo/ebikes/electrax4.jpg';
+
+   @track
+   ready = false;
+
+   connectedCallback() {
+     setTimeout(() => {
+       this.ready = true;
+     }, 3000);
+   }
 }

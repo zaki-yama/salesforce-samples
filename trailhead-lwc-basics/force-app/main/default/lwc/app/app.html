@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div id="waiting" if:false={ready}>Loading…</div>
+    <div id="display" if:true={ready}>
         <div>Name: {name}</div>
         <div>Description: {description}</div>
         <div>Category: {category}</div>
