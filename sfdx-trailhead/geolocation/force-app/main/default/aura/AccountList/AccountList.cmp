@@ -1,0 +1,10 @@
+<aura:component controller="AccountController">
+    <aura:registerEvent name="accountsLoaded" type="c:AccountsLoaded" />
+    <aura:attribute name="accounts" type="Account[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <ul>
+      <aura:iteration items="{!v.accounts}" var="account">
+        <c:AccountListItem account="{!account}"/>
+      </aura:iteration>
+    </ul>
+</aura:component>
