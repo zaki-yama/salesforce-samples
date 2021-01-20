@@ -1,1 +1,2 @@
-Force.comのサンプルコードです
+Salesforce Samples
+==================
