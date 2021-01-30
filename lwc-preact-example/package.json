@@ -37,19 +37,6 @@
     "prettier-plugin-apex": "^1.6.0",
     "rollup": "^2.38.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}": [
-      "prettier --write"
-    ],
-    "**/{aura|lwc}/**": [
-      "eslint"
-    ]
-  },
   "dependencies": {
     "preact": "^10.5.12"
   }
