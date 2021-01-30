@@ -1,8 +1,9 @@
+import App from './components/app';
 // `h` doesn't seemed to be used, but it is key for the Babel transform.
-import { h, render } from "preact";
+import {h, render} from 'preact';
 
 function createApp(el, data) {
-  const app = <div>hello, world!</div>;
+  const app = <App title={data.title} />;
   render(app, el);
   return app;
 }
