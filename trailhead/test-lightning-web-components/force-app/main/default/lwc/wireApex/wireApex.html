@@ -1,0 +1,12 @@
+<template>
+  <lightning-card title="Wire Apex" icon-name="custom:cutom107">
+    <template if:true={accounts}>
+      <template for:each={accounts} for:item="account">
+        <p key={account.Id}>{account.Name}</p>
+      </template>
+    </template>
+    <template if:true={error}>
+      <p>No accounts found.</p>
+    </template>
+  </lightning-card>
+</template>
