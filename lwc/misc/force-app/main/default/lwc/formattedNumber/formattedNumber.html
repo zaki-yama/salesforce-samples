@@ -1,0 +1,31 @@
+<template>
+  <div>
+    <lightning-formatted-number
+      format-style="currency"
+      currency-code="JPY"
+      minimum-fraction-digits="2"
+      value={value}
+    >
+    </lightning-formatted-number>
+  </div>
+  <!-- currency-code 省略する場合、組織の通貨設定が適用される -->
+  <div>
+    <lightning-formatted-number
+      format-style="currency"
+      minimum-fraction-digits="2"
+      value={value}
+    >
+    </lightning-formatted-number>
+  </div>
+  <!-- minimum-fraction-digits 省略する場合、
+    Intl.NumberFormat 的には ISO 4217 currency code list の通貨ごとの minor unit digits に従う
+    ref. https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#parameters
+    NOTE: <lightning-formatted-number> は Intl.NumberFormat を内部で使ってることはドキュメントに記載されているが、
+    ref. https://developer.salesforce.com/docs/component-library/bundle/lightning-formatted-number/documentation
+    minimum-fraction-digits が Intl.NumberFormat の minimumFractionDigits と同じ挙動になることは担保されていない
+   -->
+  <div>
+    <lightning-formatted-number format-style="currency" value={value}>
+    </lightning-formatted-number>
+  </div>
+</template>
