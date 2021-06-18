@@ -1,0 +1,16 @@
+<apex:page controller="CSVUploadController">
+<apex:sectionheader title="CSVアップロード">
+<apex:form >
+	<apex:pageblock title="ファイルの指定">
+		<apex:pageblocksection columns="1">
+			<apex:pageblocksectionitem >
+				<apex:inputfile value="{!file}">
+			</apex:inputfile></apex:pageblocksectionitem>
+		</apex:pageblocksection>
+		<apex:pageblockbuttons location="bottom">
+			<apex:commandbutton action="{!readFile}" value="アップロード">
+		</apex:commandbutton></apex:pageblockbuttons>
+	</apex:pageblock>
+</apex:form>
+</apex:sectionheader>
+</apex:page>
