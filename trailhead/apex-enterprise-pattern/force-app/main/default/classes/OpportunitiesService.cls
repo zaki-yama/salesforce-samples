@@ -1,5 +1,9 @@
 public with sharing class OpportunitiesService {
     public static void applyDiscounts(Set<Id> opportunityIds, Decimal discountPercentage) {
+        // Unit of WebServiceMock
+        fflib_SObjectUnitOfWork uow = new fflib_SObjectUnitOfWork(
+            new List<SobjectType> { OpportunityLineItem.SObjectType, Opportunity.SObjectType });
+
         // Validate parameters
         if (opportunityIds == null || opportunityIds.size() == 0)
             throw new OpportunityServiceException('Opportunities not specified.');
@@ -19,24 +23,16 @@ public with sharing class OpportunitiesService {
             if (opportunity.OpportunityLineItems!=null && opportunity.OpportunityLineItems.size()>0) {
                 for (OpportunityLineItem oppLineItem : opportunity.OpportunityLineItems) {
                     oppLineItem.UnitPrice = oppLineItem.UnitPrice * factor;
-                    oppLinesToUpdate.add(oppLineItem);
+                    uow.registerDirty(oppLineItem);
                 }
             } else {
                 opportunity.Amount = opportunity.Amount * factor;
-                oppsToUpdate.add(opportunity);
+                uow.registerDirty(opportunity);
             }
         }
-        // Update the database
-        SavePoint sp = Database.setSavePoint();
-        try {
-            update oppLinesToUpdate;
-            update oppsToUpdate;
-        } catch (Exception e) {
-            // Rollback
-            Database.rollback(sp);
-            // Throw exception on to caller
-            throw e;
-        }
+
+        // Commit Unit of Work
+        uow.commitWork();
     }
     public class OpportunityServiceException extends Exception {}
 }
